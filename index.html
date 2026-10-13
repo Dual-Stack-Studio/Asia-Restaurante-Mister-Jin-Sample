@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Asia Restaurant Mister Jin · Wok, Sushi und Mittagsbuffet in Haag</title>
+<meta name="description" content="Konzeptentwurf von Dual-Stack Studio für das Asia Restaurant Mister Jin in Haag. Nicht die offizielle Website.">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%237B1E2B'/%3E%3Ctext x='32' y='46' font-size='36' text-anchor='middle' fill='%23EAD6AE' font-family='serif'%3E亚%3C/text%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&text=亚洲餐厅&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--wine:#7B1E2B;--wine2:#9B2C3A;--deep:#5A1422;--maroon:#44101B;--champ:#D6B886;--champ2:#EAD6AE;--cream:#FBF6EE;--sand:#F3E9D8;--ink:#2B1A1C;--mut:#7a6a66;--line:#E9DCC4}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:'Nunito Sans','Segoe UI',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.brush{font-family:'Ma Shan Zheng',KaiTi,STKaiti,serif;font-weight:400}
+.wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+.note{background:#FFF3C7;color:#7a5b00;text-align:center;font-size:12px;font-weight:800;padding:6px 12px;position:relative;z-index:60}
+
+/* header */
+.hdr{position:fixed;left:0;right:0;top:var(--nh,30px);z-index:50;padding:16px 0;transition:background .35s,box-shadow .35s,padding .35s,top .35s}
+.hdr.solid{top:0;background:rgba(90,20,34,.92);backdrop-filter:blur(12px);box-shadow:0 10px 30px rgba(40,5,15,.28);padding:9px 0}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{display:flex;align-items:center;gap:12px;color:#fff}
+.mono{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1.5px solid var(--champ);color:var(--champ2);font-size:26px;line-height:1;background:rgba(255,255,255,.07)}
+.logo b{display:block;font-family:'Playfair Display',serif;font-size:19px;line-height:1.05;font-weight:600}
+.logo small{display:block;font-size:10.5px;letter-spacing:2.6px;text-transform:uppercase;color:var(--champ2);font-weight:700;margin-top:3px}
+.nav{display:flex;align-items:center;gap:26px;font-weight:700;font-size:15px;color:#fff}
+.nav a:not(.btn){position:relative;padding:4px 0;opacity:.92}
+.nav a:not(.btn):after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1.5px;background:var(--champ);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.nav a:not(.btn):hover:after{transform:scaleX(1)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:999px;font-weight:800;font-size:16px;transition:transform .25s,box-shadow .25s,background .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;fill:currentColor;flex:none}
+.btn.champ{background:linear-gradient(180deg,#F1DDB4,#D6B886);color:var(--deep);box-shadow:0 10px 26px rgba(40,5,15,.25)}
+.btn.champ:hover{box-shadow:0 14px 32px rgba(40,5,15,.32)}
+.btn.ghost{border:1.5px solid rgba(234,214,174,.65);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.btn.sm{padding:10px 20px;font-size:14px;white-space:nowrap}
+.btn.wine{background:var(--wine);color:#fff;box-shadow:0 10px 24px rgba(90,20,34,.28)}
+
+/* hero */
+.hero{position:relative;min-height:100vh;color:#fff;overflow:hidden;display:flex;flex-direction:column;background:radial-gradient(60% 70% at 82% 8%,rgba(255,205,170,.30),transparent 62%),radial-gradient(50% 60% at 8% 92%,rgba(255,170,150,.18),transparent 60%),linear-gradient(160deg,#A03040 0%,#7A1F2E 46%,#4F1120 100%)}
+.bgchars{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);font-size:clamp(190px,36vw,540px);line-height:1;white-space:nowrap;color:rgba(255,255,255,.065);pointer-events:none;user-select:none;letter-spacing:.02em;animation:drift 18s ease-in-out infinite}
+@keyframes drift{0%,100%{transform:translate(-50%,-50%)}50%{transform:translate(-50%,-52%)}}
+.ring{position:absolute;border-radius:50%;border:1px solid rgba(234,214,174,.25);pointer-events:none}
+.ring.r1{width:560px;height:560px;right:-160px;top:-170px;box-shadow:0 0 0 54px rgba(234,214,174,.045),0 0 0 108px rgba(234,214,174,.03)}
+.ring.r2{width:380px;height:380px;left:-120px;bottom:60px;border-color:rgba(234,214,174,.2);box-shadow:0 0 0 40px rgba(234,214,174,.035)}
+.hero-in{position:relative;z-index:3;flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:150px 24px 120px}
+.over{display:inline-flex;align-items:center;gap:12px;font-size:14px;letter-spacing:.3em;text-transform:uppercase;color:var(--champ2);font-weight:700}
+.over:before,.over:after{content:"";width:36px;height:1px;background:var(--champ)}
+.hero h1{font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:clamp(46px,8vw,108px);line-height:1;letter-spacing:-.015em;margin:20px 0 18px;text-shadow:0 8px 30px rgba(50,5,15,.35)}
+.hero h1 em{display:block;font-style:italic;font-weight:500;color:var(--champ2);font-size:.6em;margin-top:.15em}
+.hero .lead{font-size:clamp(17px,2vw,21px);max-width:620px;color:#f6e6d2}
+.cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.fadein>*{opacity:0;transform:translateY(18px);animation:up .9s ease forwards}
+.fadein>*:nth-child(1){animation-delay:.1s}.fadein>*:nth-child(2){animation-delay:.25s}.fadein>*:nth-child(3){animation-delay:.4s}.fadein>*:nth-child(4){animation-delay:.55s}
+@keyframes up{to{opacity:1;transform:none}}
+.wave{position:absolute;left:0;right:0;bottom:-1px;line-height:0;z-index:2}
+.wave svg{display:block;width:100%;height:clamp(60px,9vw,130px)}
+
+/* info cards over the wave */
+.facts{position:relative;z-index:5;margin-top:-62px}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.fact{background:#fff;border-radius:22px;padding:20px 18px;text-align:center;box-shadow:0 18px 40px rgba(90,20,34,.13);border:1px solid #f1e6d2}
+.fact b{display:block;font-family:'Playfair Display',serif;font-size:20px;color:var(--wine);font-weight:600;line-height:1.2}
+.fact span{font-size:14px;color:var(--mut)}
+
+/* sections */
+section{padding:100px 0;position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-weight:800;font-size:12.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--wine2)}
+.eyebrow:before,.eyebrow:after{content:"";width:30px;height:1px;background:var(--champ)}
+h2{font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:clamp(34px,4.6vw,54px);line-height:1.1;letter-spacing:-.01em;margin:12px 0 14px}
+h2 em{font-style:italic;font-weight:500;color:var(--wine2)}
+.lead2{font-size:18.5px;color:var(--mut);max-width:620px}
+.center{text-align:center}.center .lead2{margin:0 auto}
+.kueche{padding-top:110px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:48px}
+.card{display:block;background:#fff;border-radius:26px;padding:32px 24px 28px;text-align:center;box-shadow:0 14px 34px rgba(90,20,34,.08);border:1px solid #f1e6d2;transition:transform .35s,box-shadow .35s}
+.card:hover{transform:translateY(-8px);box-shadow:0 24px 46px rgba(90,20,34,.15)}
+.ic{width:46px;height:46px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.card .ico{width:88px;height:88px;margin:0 auto 16px;border-radius:50%;display:grid;place-items:center;color:var(--wine);background:radial-gradient(circle at 30% 25%,#FFF7EA,#F1DFC0);box-shadow:inset 0 0 0 1px rgba(214,184,134,.6)}
+.card h3{font-family:'Playfair Display',serif;font-weight:600;font-size:23px;margin-bottom:6px;line-height:1.2}
+.card p{color:var(--mut);font-size:15.5px}
+.menu{background:radial-gradient(60% 80% at 90% 0%,rgba(255,205,170,.22),transparent 60%),linear-gradient(160deg,#8E2535,#561321);color:#fff;overflow:hidden}
+.menu .wave.top{top:-1px;bottom:auto;transform:rotate(180deg)}
+.menu .wrap{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;z-index:3}
+.menu .eyebrow{color:var(--champ2)}
+.menu h2 em{color:var(--champ2)}
+.menu .lead2{color:#f6e1c8}
+.menu ul{list-style:none;margin:22px 0 30px;display:grid;gap:10px}
+.menu li{padding-left:30px;position:relative;font-weight:700}
+.menu li:before{content:"";position:absolute;left:2px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--champ);box-shadow:0 0 0 4px rgba(214,184,134,.25)}
+.menu .hint{margin-top:14px;font-size:13px;color:#ecd2b4}
+.mock{position:relative;justify-self:center;width:min(100%,410px);transform:rotate(2.5deg);transition:transform .5s}
+.mock:hover{transform:rotate(0) scale(1.03)}
+.mock img{width:100%;height:auto;display:block;border-radius:10px;box-shadow:0 34px 70px rgba(30,0,10,.5);border:6px solid #fff}
+.mock:after{content:"PDF";position:absolute;right:-14px;top:-14px;background:var(--champ2);color:var(--deep);font-weight:800;font-size:14px;letter-spacing:.1em;padding:10px 15px;border-radius:50%;box-shadow:0 8px 18px rgba(30,0,10,.35);transform:rotate(10deg)}
+.buffet{background:linear-gradient(180deg,var(--sand),var(--cream))}
+.buffet .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:center}
+.prices{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.pbox{background:radial-gradient(90% 110% at 90% 0%,rgba(255,205,170,.28),transparent 60%),linear-gradient(155deg,#9B2C3A,#5A1422);color:#fff;border-radius:26px;padding:26px 24px;box-shadow:0 22px 44px rgba(90,20,34,.25)}
+.pbox .pt{font-family:'Playfair Display',serif;font-weight:600;font-size:21px;line-height:1.15}
+.pbox .pt small{font-family:'Nunito Sans',sans-serif;font-size:12px;font-weight:600;opacity:.85}
+.pbox .ph{color:var(--champ2);font-weight:800;font-size:14px;margin:4px 0 12px;letter-spacing:.03em}
+.pbox .pr{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid rgba(234,214,174,.28);font-size:15px}
+.pbox .pr b{color:var(--champ2);font-size:17px}
+.about{background:var(--cream)}
+.about .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:center}
+.orb{position:relative;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 28% 22%,#B53D4C,#7A1F2E 55%,#4F1120);box-shadow:0 34px 70px rgba(90,20,34,.3);display:grid;place-items:center;color:#fff;overflow:hidden;text-align:center}
+.orb:before{content:"";position:absolute;inset:7%;border-radius:50%;border:1px solid rgba(234,214,174,.4)}
+.orb:after{content:"";position:absolute;inset:15%;border-radius:50%;border:1px solid rgba(234,214,174,.22)}
+.orb .big{position:absolute;font-size:clamp(110px,20vw,230px);line-height:1;color:rgba(255,255,255,.11)}
+.orb .t{position:relative;z-index:2;font-family:'Playfair Display',serif;font-size:clamp(26px,3.6vw,40px);line-height:1.1;font-weight:600}
+.orb .t em{display:block;font-style:italic;font-weight:500;color:var(--champ2);font-size:.62em;margin-top:6px}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.val{background:#fff;border:1px solid #f1e6d2;border-radius:20px;padding:18px 12px;text-align:center;box-shadow:0 10px 24px rgba(90,20,34,.07)}
+.val b{display:block;font-family:'Playfair Display',serif;font-size:17px;color:var(--wine);font-weight:600}
+.val span{font-size:13.5px;color:var(--mut)}
+.todo{font-size:12px;font-weight:800;color:#8a6a00;background:#fff3c7;padding:1px 8px;border-radius:6px;white-space:nowrap}
+.visit{background:var(--sand)}
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px;text-align:left}
+.vbox{background:#fff;border-radius:26px;padding:30px 28px;border:1px solid #f1e6d2;box-shadow:0 14px 34px rgba(90,20,34,.08)}
+.vbox h3{font-family:'Playfair Display',serif;font-weight:600;font-size:23px;margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.vbox h3 i{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--wine);color:#fff;font-style:normal;font-size:15px}
+.vbox p,.vbox td{color:#5a4a46;font-size:16px}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:7px 0;border-bottom:1px dotted #d9c49c}
+.hours td:last-child{text-align:right;font-weight:800;color:var(--ink)}
+.vbox .btn{margin-top:18px}
+.foot{background:var(--maroon);color:#ecd9bb;padding:56px 0 34px;position:relative}
+.foot .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;font-size:14px;align-items:center}
+.foot a{text-decoration:underline;text-underline-offset:3px}
+.foot .logo b{font-size:18px}
+.sticky{position:fixed;right:16px;bottom:16px;z-index:70;display:none}
+.rv{transition:opacity .9s ease,transform .9s ease}
+.js .rv{opacity:0;transform:translateY(28px)}
+.js .rv.in{opacity:1;transform:none}
+@media(max-width:980px){.nav a:not(.btn){display:none}.cards{grid-template-columns:1fr 1fr}.menu .wrap,.about .wrap,.buffet .wrap{grid-template-columns:1fr;gap:40px}.vgrid{grid-template-columns:1fr}.facts .wrap{grid-template-columns:1fr 1fr}.mock{width:min(80%,360px)}.orb{width:min(76%,340px);justify-self:center}}
+@media(max-width:560px){section{padding:68px 0}.note{font-size:11px;padding:5px 10px;line-height:1.35}.cards{grid-template-columns:1fr}.logo b{font-size:17px}.logo small{display:none}.hdr .btn.sm{padding:9px 14px;font-size:13px}.hdr .btn.sm svg{width:17px;height:17px}.hdr .wrap{gap:10px}.hero-in{padding:130px 20px 100px}.sticky{display:block}.values{grid-template-columns:1fr}.prices{grid-template-columns:1fr}.facts{margin-top:-46px}.facts .wrap{gap:12px}.fact{padding:16px 12px}.fact b{font-size:17px}.over:before,.over:after{width:18px}.over{letter-spacing:.2em}}
+@media(max-width:360px){.wrap{padding:0 18px}.logo{gap:9px}.mono{width:38px;height:38px;font-size:23px}.logo b{font-size:15px}.hdr .btn.sm{padding:8px 12px;font-size:12.5px}}
+@media(prefers-reduced-motion:reduce){.bgchars{animation:none}.fadein>*{animation:none;opacity:1;transform:none}.rv{transition:none}.js .rv{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style></head><body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-bowl" viewBox="0 0 48 48"><path d="M6 22h36c0 10-7.500 18-18 18S6 32 6 22z"/><path d="M16 44h16"/><path d="M18 15c-2.500-3.500 2.500-5 0-9M25 15c-2.500-3.500 2.500-5 0-9M32 15c-2.500-3.500 2.500-5 0-9"/></symbol>
+<symbol id="i-wok" viewBox="0 0 48 48"><path d="M4 24h30c0 9-6.700 16-15 16S4 33 4 24z"/><path d="M34 26l11-6"/><path d="M12 17c0-3.500 3.500-3.500 3.500-7M21 17c0-3.500 3.500-3.500 3.500-7"/><path d="M10 44h18"/></symbol>
+<symbol id="i-sushi" viewBox="0 0 48 48"><rect x="6" y="27" width="36" height="12" rx="6"/><path d="M9 27c1.500-11 28.500-11 30 0"/><path d="M19 19v8M27 17v10M34 20v7"/></symbol>
+<symbol id="i-sun" viewBox="0 0 48 48"><circle cx="24" cy="24" r="8"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6M11 11l4 4M33 33l4 4M37 11l-4 4M15 33l-4 4"/></symbol>
+<symbol id="pdf" viewBox="0 0 24 24"><path d="M6 2h8l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm7 1.500V8h4.500L13 3.500zM7 14h10v1.500H7zm0 3h7v1.500H7z"/></symbol>
+</defs></svg>
+
+<div class="note">Konzeptentwurf von Dual-Stack Studio · nicht die offizielle Website · Daten aus dem gedruckten Flyer, bitte vom Restaurant prüfen lassen</div>
+
+<header class="hdr" id="hdr"><div class="wrap">
+  <a class="logo" href="#start"><span class="mono brush">亚</span><span><b>Asia Restaurant</b><small>Mister Jin</small></span></a>
+  <nav class="nav"><a href="#kueche">Küche</a><a href="#speisekarte">Speisekarte</a><a href="#buffet">Buffet</a><a href="#ueber">Über uns</a><a href="#besuch">Besuch</a>
+    <a class="btn champ sm" href="speisekarte.pdf" target="_blank" rel="noopener"><svg><use href="#pdf"/></svg>Speisekarte (PDF)</a></nav>
+</div></header>
+
+<section class="hero" id="start" style="padding:0">
+  <div class="bgchars brush" aria-hidden="true">亚洲餐厅</div>
+  <span class="ring r1" aria-hidden="true"></span><span class="ring r2" aria-hidden="true"></span>
+  <div class="hero-in fadein">
+    <p class="over">Herzlich willkommen</p>
+    <h1>Asia Restaurant <em>Mister Jin</em></h1>
+    <p class="lead">Wok, Sushi und chinesische Gerichte mitten in Haag. Frisch zubereitet, vor Ort genießen oder zum Mitnehmen.</p>
+    <div class="cta">
+      <a class="btn champ" href="speisekarte.pdf" target="_blank" rel="noopener"><svg><use href="#pdf"/></svg>Speisekarte ansehen (PDF)</a>
+      <a class="btn ghost" href="#besuch">Anfahrt &amp; Öffnungszeiten</a>
+    </div>
+  </div>
+  <div class="wave"><svg viewBox="0 0 1440 130" preserveAspectRatio="none"><path d="M0 70C220 130 460 10 720 52S1220 130 1440 58V130H0Z" fill="#FBF6EE"/></svg></div>
+</section>
+
+<div class="facts"><div class="wrap">
+  <div class="fact"><b>Mittagsbuffet</b><span>All you can eat · ab € 8,50</span></div>
+  <div class="fact"><b>Wok · Sushi · China</b><span>Vor Ort &amp; zum Mitnehmen</span></div>
+  <div class="fact"><b>Täglich geöffnet</b><span>11:00–14:30 · 17:00–22:00</span></div>
+  <div class="fact"><b>Linzerstraße 6 A</b><span>3350 Haag · 07434 / 44856</span></div>
+</div></div>
+
+<section class="kueche" id="kueche"><div class="wrap center">
+  <span class="eyebrow">Unsere Küche</span>
+  <h2>Vom Wok auf <em>Ihren Teller</em></h2>
+  <p class="lead2">Über 130 Gerichte: Klassiker der chinesischen Küche, Thai-Spezialitäten, Sushi und Desserts. Dazu Reis oder Nudeln nach Wahl.</p>
+  <div class="cards">
+    <a class="card rv" href="speisekarte.pdf#page=1" target="_blank" rel="noopener"><div class="ico"><svg class="ic"><use href="#i-bowl"/></svg></div><h3>Vorspeisen &amp; Suppen</h3><p>Frühlingsrollen, Jiaozi, Salate und Suppen wie Pikante Suppe oder Tom Yam Gung.</p></a>
+    <a class="card rv" href="speisekarte.pdf#page=1" target="_blank" rel="noopener"><div class="ico"><svg class="ic"><use href="#i-wok"/></svg></div><h3>Aus dem Wok</h3><p>Huhn, Ente, Schwein, Rind, Fisch und Meeresfrüchte, mild oder scharf.</p></a>
+    <a class="card rv" href="speisekarte.pdf#page=2" target="_blank" rel="noopener"><div class="ico"><svg class="ic"><use href="#i-sushi"/></svg></div><h3>Sushi &amp; Maki</h3><p>Sushi-Sets, Norimaki und California Maki, frisch zubereitet.</p></a>
+    <a class="card rv" href="speisekarte.pdf#page=3" target="_blank" rel="noopener"><div class="ico"><svg class="ic"><use href="#i-sun"/></svg></div><h3>Mittagsmenüs</h3><p>Montag bis Freitag ab € 7,20, inklusive Suppe oder Frühlingsrollen.</p></a>
+  </div>
+</div></section>
+
+<section class="menu" id="speisekarte">
+  <div class="wave top"><svg viewBox="0 0 1440 130" preserveAspectRatio="none"><path d="M0 70C220 130 460 10 720 52S1220 130 1440 58V130H0Z" fill="#FBF6EE"/></svg></div>
+  <div class="wrap" style="padding-top:60px">
+    <div class="rv">
+      <span class="eyebrow">Speisekarte</span>
+      <h2>Die ganze Karte <em>zum Durchblättern</em></h2>
+      <p class="lead2">Öffnen Sie die komplette Speisekarte als PDF: mit allen Gerichten, Preisen und Allergenen. Am Handy, am Tablet oder zum Ausdrucken.</p>
+      <ul><li>Über 130 Gerichte mit Preisen</li><li>Mittagsmenüs, Luxusmenüs und Mittagsbuffet</li><li>Allergene (A bis R) und scharfe Gerichte markiert</li></ul>
+      <a class="btn champ" href="speisekarte.pdf" target="_blank" rel="noopener"><svg><use href="#pdf"/></svg>Speisekarte öffnen (PDF)</a>
+      <p class="hint">Gerichte und Preise nach dem gedruckten Flyer übernommen. Das Restaurant sollte sie vor der Veröffentlichung prüfen.</p>
+    </div>
+    <a class="mock rv" href="speisekarte.pdf" target="_blank" rel="noopener" aria-label="Speisekarte als PDF öffnen"><img src="assets/menu-vorschau.jpg" alt="Vorschau der Speisekarte: Titelseite in Weinrot mit Vorspeisen und Suppen" loading="lazy"></a>
+  </div>
+</section>
+
+<section class="buffet" id="buffet"><div class="wrap">
+  <div class="rv"><span class="eyebrow">Mittagsbuffet</span>
+    <h2>All you <em>can eat!</em></h2>
+    <p class="lead2">Ein reichhaltiges Buffet mit Suppen, Vorspeisen, warmen Gerichten, Maki, Salaten, frischem Obst sowie Desserts. Guten Appetit!</p></div>
+  <div class="prices rv">
+    <div class="pbox"><div class="pt">Mo. – Fr. <small>(außer Feiertags)</small></div><div class="ph">11:30 – 14:00 Uhr</div>
+      <div class="pr"><span>Erwachsene</span><b>€ 8,50</b></div><div class="pr"><span>Kinder bis 10 Jahren</span><b>€ 5,80</b></div><div class="pr"><span>Kinder bis 5 Jahren</span><b>€ 3,20</b></div></div>
+    <div class="pbox"><div class="pt">Sa., So. &amp; Feiertag</div><div class="ph">11:30 – 14:00 Uhr</div>
+      <div class="pr"><span>Erwachsene</span><b>€ 10,50</b></div><div class="pr"><span>Kinder bis 10 Jahren</span><b>€ 7,80</b></div><div class="pr"><span>Kinder bis 5 Jahren</span><b>€ 4,20</b></div></div>
+  </div>
+</div></section>
+
+<section class="about" id="ueber"><div class="wrap">
+  <div class="orb rv" aria-hidden="true"><span class="big brush">亚洲</span><div class="t">Asia Restaurant<em>Mister Jin</em></div></div>
+  <div class="rv">
+    <span class="eyebrow">Über uns</span>
+    <h2>Eine Küche mit <em>Liebe zum Detail</em></h2>
+    <p class="lead2">Bei uns gibt es Wok-Gerichte, Sushi und viele Klassiker der asiatischen Küche, frisch zubereitet und liebevoll angerichtet. Kommen Sie zum Mittagsbuffet oder am Abend vorbei und lassen Sie sich verwöhnen. <span class="todo">Text mit dem Restaurant abstimmen</span></p>
+    <div class="values">
+      <div class="val"><b>Frisch</b><span>zubereitet</span></div>
+      <div class="val"><b>Vielfalt</b><span>über 130 Gerichte</span></div>
+      <div class="val"><b>Herzlich</b><span>im Service</span></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="visit" id="besuch"><div class="wrap center">
+  <span class="eyebrow">Besuch</span>
+  <h2>Wir freuen uns <em>auf Sie</em></h2>
+  <div class="vgrid">
+    <div class="vbox rv"><h3><i>⌖</i>Adresse</h3><p><b>Asia Restaurant Mister Jin</b><br>Linzerstraße 6 A<br>3350 Haag, Niederösterreich</p>
+      <a class="btn wine" href="https://www.google.com/maps/search/?api=1&query=Asia+Restaurant+Mister+Jin+Linzerstra%C3%9Fe+6+3350+Haag" target="_blank" rel="noopener">Route in Google Maps</a></div>
+    <div class="vbox rv"><h3><i>◷</i>Öffnungszeiten</h3>
+      <table class="hours"><tr><td>Montag bis Sonntag</td><td>11:00–14:30</td></tr><tr><td>Abends täglich</td><td>17:00–22:00</td></tr><tr><td>Mittagsbuffet</td><td>11:30–14:00</td></tr></table>
+      <p style="margin-top:10px;font-size:13.5px;color:var(--mut)">Laut gedrucktem Flyer. Feiertage bitte erfragen.</p></div>
+    <div class="vbox rv"><h3><i>✆</i>Kontakt</h3><p>Telefon: <a href="tel:+43743444856" style="font-weight:800;color:var(--wine)">07434 / 44856</a><br>Mobil: <a href="tel:+4369917396886" style="font-weight:800;color:var(--wine)">0699 / 1739 6886</a></p>
+      <p style="margin-top:12px">Tischreservierung und Bestellungen zum Mitnehmen am besten telefonisch.</p>
+      <a class="btn champ sm" style="margin-top:14px;color:var(--deep)" href="tel:+43743444856">Jetzt anrufen</a></div>
+  </div>
+</div></section>
+
+<footer class="foot"><div class="wrap">
+  <div class="logo"><span class="mono brush">亚</span><span><b>Asia Restaurant</b><small style="display:block;font-size:10px;letter-spacing:2.4px;text-transform:uppercase;color:var(--champ2)">Mister Jin · Haag</small></span></div>
+  <div>© Asia Restaurant Mister Jin · <a href="#">Impressum</a> · <a href="#">Datenschutz</a> · <a href="speisekarte.pdf" target="_blank" rel="noopener">Allergene</a></div>
+  <div style="opacity:.8">Konzeptentwurf von Dual-Stack Studio, Haag</div>
+</div></footer>
+
+<div class="sticky"><a class="btn champ sm" href="speisekarte.pdf" target="_blank" rel="noopener"><svg><use href="#pdf"/></svg>Speisekarte</a></div>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var nt=document.querySelector('.note'), h=document.getElementById('hdr');
+  function setNh(){ document.documentElement.style.setProperty('--nh', nt.offsetHeight+'px'); }
+  setNh(); window.addEventListener('resize',setNh); window.addEventListener('load',setNh);
+  if(document.fonts&&document.fonts.ready){document.fonts.ready.then(setNh);}
+  function onS(){ h.classList.toggle('solid', window.scrollY>nt.offsetHeight+10); }
+  window.addEventListener('scroll',onS,{passive:true}); onS();
+  var els=[].slice.call(document.querySelectorAll('.rv'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){ if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);} });},{threshold:.12});
+    els.forEach(function(el,i){ el.style.transitionDelay=(i%4)*100+'ms'; io.observe(el); });
+  } else { els.forEach(function(el){el.classList.add('in');}); }
+})();
+</script>
+</body></html>
