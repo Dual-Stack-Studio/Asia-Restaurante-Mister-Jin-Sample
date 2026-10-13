@@ -49,7 +49,8 @@ a{color:inherit;text-decoration:none}
 .over{display:inline-flex;align-items:center;gap:12px;font-size:14px;letter-spacing:.3em;text-transform:uppercase;color:var(--champ2);font-weight:700}
 .over:before,.over:after{content:"";width:36px;height:1px;background:var(--champ)}
 .hero h1{font-family:'Playfair Display',Georgia,serif;font-weight:600;font-size:clamp(46px,8vw,108px);line-height:1;letter-spacing:-.015em;margin:20px 0 18px;text-shadow:0 8px 30px rgba(50,5,15,.35)}
-.hero h1 em{display:block;font-style:normal;font-weight:500;letter-spacing:.07em;color:var(--champ2);font-size:.58em;margin-top:.2em}
+.hero h1 em{display:block;font-style:italic;font-weight:500;color:var(--champ2);font-size:.6em;margin-top:.15em}
+.j{display:inline-block;font-style:normal;transform:skewX(-12deg);transform-origin:50% 100%;margin-right:.03em}
 .hero .lead{font-size:clamp(17px,2vw,21px);max-width:620px;color:#f6e6d2}
 .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:34px}
 .fadein>*{opacity:0;transform:translateY(18px);animation:up .9s ease forwards}
@@ -111,7 +112,7 @@ h2 em{font-style:italic;font-weight:500;color:var(--wine2)}
 .orb:after{content:"";position:absolute;inset:15%;border-radius:50%;border:1px solid rgba(234,214,174,.22)}
 .orb .big{position:absolute;font-size:clamp(110px,20vw,230px);line-height:1;color:rgba(255,255,255,.11)}
 .orb .t{position:relative;z-index:2;font-family:'Playfair Display',serif;font-size:clamp(26px,3.6vw,40px);line-height:1.1;font-weight:600}
-.orb .t em{display:block;font-style:normal;font-weight:500;letter-spacing:.08em;color:var(--champ2);font-size:.62em;margin-top:6px}
+.orb .t em{display:block;font-style:italic;font-weight:500;color:var(--champ2);font-size:.62em;margin-top:6px}
 .values{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
 .val{background:#fff;border:1px solid #f1e6d2;border-radius:20px;padding:18px 12px;text-align:center;box-shadow:0 10px 24px rgba(90,20,34,.07)}
 .val b{display:block;font-family:'Playfair Display',serif;font-size:17px;color:var(--wine);font-weight:600}
@@ -162,7 +163,7 @@ h2 em{font-style:italic;font-weight:500;color:var(--wine2)}
   <span class="ring r1" aria-hidden="true"></span><span class="ring r2" aria-hidden="true"></span>
   <div class="hero-in fadein">
     <p class="over">Herzlich willkommen</p>
-    <h1>Asia Restaurant <em>Mister Jin</em></h1>
+    <h1>Asia Restaurant <em>Mister <span class="j">J</span>in</em></h1>
     <p class="lead">Wok, Sushi und chinesische Gerichte mitten in Haag. Frisch zubereitet, vor Ort genießen oder zum Mitnehmen.</p>
     <div class="cta">
       <a class="btn champ" href="speisekarte.pdf" target="_blank" rel="noopener"><svg><use href="#pdf"/></svg>Speisekarte ansehen (PDF)</a>
@@ -219,7 +220,7 @@ h2 em{font-style:italic;font-weight:500;color:var(--wine2)}
 </div></section>
 
 <section class="about" id="ueber"><div class="wrap">
-  <div class="orb rv" aria-hidden="true"><span class="big brush">亚洲</span><div class="t">Asia Restaurant<em>Mister Jin</em></div></div>
+  <div class="orb rv" aria-hidden="true"><span class="big brush">亚洲</span><div class="t">Asia Restaurant<em>Mister <span class="j">J</span>in</em></div></div>
   <div class="rv">
     <span class="eyebrow">Über uns</span>
     <h2>Eine Küche mit <em>Liebe zum Detail</em></h2>
